@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/provision": {
+      "name": "/provision",
+      "lambdaFunction": "amplifyformdemoc31221fb",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

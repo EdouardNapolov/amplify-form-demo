@@ -1,4 +1,20 @@
 {
+  "api": {
+    "AmplifyDemoFormApiService": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyformdemoc31221fb"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "amplifyformdemo5b38965d": {
       "customAuth": false,
@@ -25,6 +41,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "amplifyformdemoc31221fb": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_amplifyformdemoc31221fb_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyformdemoc31221fb"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyformdemoc31221fb_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyformdemoc31221fb"
+        }
+      ]
     }
   }
 }
