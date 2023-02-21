@@ -13,9 +13,6 @@
       "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify3924120a97684-staging-140359-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
-      "auth": {
-        "amplifyformdemo5b38965d": {}
-      },
       "function": {
         "amplifyformdemoc31221fb": {
           "deploymentBucketName": "amplify-amplify3924120a97684-staging-140359-deployment",
