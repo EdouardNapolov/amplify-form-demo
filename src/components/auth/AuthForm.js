@@ -2,15 +2,9 @@ import { useState, useRef } from 'react';
 
 import classes from './AuthForm.module.css';
 
-const AuthForm = () => {
+const AuthForm = (props) => {
     const emailInputRef = useRef();
     const passwordInputRef = useRef();
-
-    const [isLogin, setIsLogin] = useState(true);
-
-    const switchAuthModeHandler = () => {
-        setIsLogin((prevState) => !prevState);
-    };
 
     const submitHandler = (event) => {
         event.preventDefault();
@@ -18,11 +12,8 @@ const AuthForm = () => {
         const enteredEmail = emailInputRef.current.value;
         const enteredPassword = passwordInputRef.current.value;
 
-        if (isLogin) {
-            // do nothing
-        } else {
-            // do login
-        }
+        event.preventDefault();
+        props.onLogin(enteredEmail, enteredPassword);
     };
 
     return (
